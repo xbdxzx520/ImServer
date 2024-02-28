@@ -9,7 +9,6 @@ http_msg_server
 login_server
 msfs
 msg_server
-push_server
 router_server
 ```
 
@@ -26,7 +25,7 @@ router_server
 - MsfsServer (C++): 图片存储服务器，提供头像，图片传输中的图片存储服务
 - DBProxy (C++): 数据库代理服务器，提供mysql以及redis的访问服务，屏蔽其他服务器与mysql与redis的直接交互
 - HttpMsgServer(C++) :对外接口服务器，提供对外接口功能。（目前只是框架）
-- PushServer(C++): 消息推送服务器，提供IOS系统消息推送。（IOS消息推送必须走apns）
+
 
 注意：上图中并没有push_server和http_push_server。如果你不调试ios版本的客户端，可以暂且不启动push_server，另外http_push_server也可以暂不启动。
 
